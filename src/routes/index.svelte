@@ -37,7 +37,7 @@
 <h1>Recent Projects by Me</h1>
 
 <div>
-    { #each projects as { name, slug, description, image}}
+    { #each projects as { name, slug, description, image }}
         <ProjectCard 
         {name} 
         {description} 
