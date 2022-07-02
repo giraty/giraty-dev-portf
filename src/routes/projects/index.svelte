@@ -1,7 +1,7 @@
 <script context="module">
     import ProjectCard from '$lib/components/project-card.svelte'
     import { client } from '$lib/graphql-client'
-    import { projectQuery} from '$lib/graphql-queries'
+    import { projectsQuery} from '$lib/graphql-queries'
 
     export const load = async () => {
         const { projects } = await client.request(projectsQuery)
@@ -17,7 +17,7 @@
 </script>
 
 <script>
-    export let project
+    export let projects
 </script>
 
 <svelte:head>
